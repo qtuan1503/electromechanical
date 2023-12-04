@@ -1,0 +1,28 @@
+<div id="acc" class="account">
+    <div id="btn-edit" style="display: flex; flex-direction: row;">
+        <button class="edit" onclick="change_infor()">Sửa thông tin</button>
+        <button class="edit" onclick="change_pass()">Đổi mật khẩu</button>
+    </div>
+
+    <div id="inf" class="box-hide">
+        Sửa thông tin
+        <input id="ten" type="text" placeholder="Họ và tên...">
+        <input id="sdt" type="tel" placeholder="Số điện thoại...">
+        <input id="email" type="email" placeholder="Email...">
+        <div>
+            <button onclick="save_inf()">Lưu</button>
+            <button onclick="hide_inf()">Hủy</button>
+        </div>
+    </div>
+
+    <div id="pas" class="box-hide">
+        Đổi mật khẩu
+        <input id="old" type="password" placeholder="Mật khẩu cũ...">
+        <input id="new" type="text" placeholder="Mật khẩu mới...">
+        <input id="confirm" type="text" placeholder="Xác nhận mật khẩu mới...">
+        <div>
+            <button onclick="save_pass()">Lưu</button>
+            <button onclick="hide_pas()">Hủy</button>
+        </div>
+    </div>
+</div>
