@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Chưa đặt tên</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="src/logo.png">
+</head>
+
+<body>
+
+    <div id="overlay" class="over-lay">
+        <div id="login" class="box-login-display">
+            Đăng nhập
+            <input id="sdt" type="tel" placeholder="Số điện thoại...">
+            <input id="pass" type="password" placeholder="Mật khẩu...">
+            <div>
+                <button onclick="login()">Đăng nhập</button>
+                <button onclick="signup_page()">Đăng kí</button>
+            </div>
+        </div>
+    
+        <div id="signup" class="box-hide">
+            Đăng ký
+            <input id="name" type="text" placeholder="Họ và tên...">
+            <input id="phone" type="tel" placeholder="Số điện thoại">
+            <input id="email" type="email" placeholder="Email...">
+            <input id="newpass" type="email" placeholder="Mật khẩu">
+            <div>
+                <button onclick="new_user()">Đăng kí</button>
+                <button onclick="return_signup()">Hủy</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toolbar" class="toolbars">
+        
+    </div>
+
+    <div id="here" class="display">
+        <div id="flag"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
