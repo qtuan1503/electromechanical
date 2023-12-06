@@ -32,13 +32,33 @@ h1 {
 }
 
 #login {
-  background: rgb(18, 18, 221);
-  background: linear-gradient(
-    90deg,
-    rgba(18, 18, 221, 1) 0%,
-    rgba(0, 212, 255, 1) 49%,
-    rgba(18, 18, 221, 1) 100%
-  );
+  background: #fff;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0452aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.9;
 }
 
 /*---------------------- Tools Bar ------------------*/
@@ -71,9 +91,7 @@ h1 {
   border-top: 1px solid gray;
   transition-duration: 0.3s;
 }
-button:hover {
-  background-color: beige;
-}
+
 .clicked {
   background-color: beige;
 }
