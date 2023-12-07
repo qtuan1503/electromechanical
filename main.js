@@ -199,19 +199,34 @@ function show_data() {
   Used.forEach((index) => {
     count += 1;
   });
+
+  const date = new Date();
+  const currentMonth = date.getMonth();
+
+  let eAmount = 0;
+  let wAmount = 0;
+
+  Used.filter((item) => {
+    const time = new Date(item.recordTime);
+    return time.getMonth() === currentMonth;
+  }).forEach((index) => {
+    eAmount += parseFloat(index.electric) * parseFloat(index.ePrice);
+    wAmount += parseFloat(index.water) * parseFloat(index.wPrice);
+  });
+
   try {
     let html =
       '<div class="general">' +
       '<div class="pay-box water">' +
       "<b>Tiền điện tháng này</b>" +
       '<div id="ele" style="color: red;">' +
-      eCalc(count) +
+      eAmount +
       " VNĐ</div>" +
       "</div>" +
       '<div class="pay-box electric">' +
       "<b>Tiền nước tháng này</b>" +
       '<div id="ele" style="color: red;">' +
-      wCalc(count) +
+      wAmount +
       " VNĐ</div>" +
       "</div>" +
       "</div>" +

@@ -20,6 +20,9 @@ h1 {
   right: 0px;
   width: 82vw;
   height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 24px;
 }
 
 #overlay {
@@ -61,7 +64,6 @@ button {
   background-color: #0452aa;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
