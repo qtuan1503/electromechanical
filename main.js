@@ -226,7 +226,7 @@ function show_data() {
       "<th>Số điện tiêu thụ (kWh)</th>" +
       "<th>Số nước tiêu thụ (m3)</th>" +
       "<th>Tiền điện phải trả (VNĐ)</th>" +
-      "<th>Tiền nước phải trả (VND)</th>" +
+      "<th>Tiền nước phải trả (VNĐ)</th>" +
       "<th>Tổng (VNĐ)</th>" +
       "</tr>" +
       "</thead>" +
