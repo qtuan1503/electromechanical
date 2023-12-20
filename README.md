@@ -1,2 +1,2 @@
 # enw_calc
-Tính điện nước phần fontend
+Đo điện cơ phần frontend
